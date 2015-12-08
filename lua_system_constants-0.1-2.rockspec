@@ -1,8 +1,8 @@
 package = "lua_system_constants"
-version = "0.1-1"
+version = "0.1-2"
 source = {
-  url = "https://github.com/Mashape/lua-system-constants/archive/0.1-1.tar.gz",
-  dir = "lua-constants-0.1-1"
+  url = "https://github.com/Mashape/lua-system-constants/archive/0.1-2.tar.gz",
+  dir = "lua-system-constants-0.1-2"
 }
 description = {
   summary = "System Constants",
