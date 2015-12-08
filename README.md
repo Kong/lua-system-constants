@@ -1,18 +1,17 @@
-# lua_ip
+# lua_constants
 
-Lua utility library for IPs.
+Lua utility library to retrieve system constants values, based on the architecture this library has been complied for.
 
 ## Usage
 
-To retrieve the first, non-loopback, IPv4 IP address on the system. Optionally you can specify the interface to lookup.
-
 ```lua
-local ip_utils = require "lua_ip"
+local lua_constants = require "lua_constants"
 
--- Retrieve first available IP address
-print("IP address is: "..ip_utils.get_ipv4())
+print(lua_constants.O_WRONLY())
+print(lua_constants.O_CREAT())
+print(lua_constants.O_APPEND())
+print(lua_constants.S_IWUSR())
+print(lua_constants.S_IRUSR())
+print(lua_constants.S_IXUSR())
 
--- Retrieve specific interface
-print("IP address for eth0 is: "..ip_utils.get_ipv4("eth0"))
 ```
-

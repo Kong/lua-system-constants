@@ -1,15 +1,15 @@
-package = "lua_ip"
-version = "0.1-2"
+package = "lua_constants"
+version = "0.1-1"
 source = {
-  url = "https://github.com/Mashape/lua-ip/archive/0.1-2.tar.gz",
-  dir = "lua-ip-0.1-2"
+  url = "https://github.com/Mashape/lua-constants/archive/0.1-1.tar.gz",
+  dir = "lua-constants-0.1-1"
 }
 description = {
-  summary = "IP utils",
+  summary = "Constants",
   detailed = [[
-    Generic IP utilities
+    Lua utility library to retrieve system constants values, based on the architecture this library has been complied for.
   ]],
-  homepage = "https://github.com/Mashape/lua-ip",
+  homepage = "https://github.com/Mashape/lua-constants",
   license = "MIT"
 }
 dependencies = {
