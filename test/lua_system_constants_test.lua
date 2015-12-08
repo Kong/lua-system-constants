@@ -1,8 +1,8 @@
-local constants = require "lua_constants"
+local system_constants = require "lua_system_constants"
 
-assert(constants.O_WRONLY())
-assert(constants.O_CREAT())
-assert(constants.O_APPEND())
-assert(constants.S_IWUSR())
-assert(constants.S_IRUSR())
-assert(constants.S_IXUSR())
+assert(system_constants.O_WRONLY())
+assert(system_constants.O_CREAT())
+assert(system_constants.O_APPEND())
+assert(system_constants.S_IWUSR())
+assert(system_constants.S_IRUSR())
+assert(system_constants.S_IXUSR())
