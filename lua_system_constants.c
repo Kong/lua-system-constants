@@ -2,7 +2,7 @@
 Retrieve some specific constants values based on the system this library has been compiled for.
 
 @license MIT
-@module lua_constants
+@module lua_system_constants
 */
 #include <lua.h>
 #include <lauxlib.h>
@@ -43,7 +43,7 @@ static int get_S_IXUSR(lua_State *L) {
   return 1;
 }
 
-static const luaL_Reg lua_constants[] = {
+static const luaL_Reg lua_system_constants[] = {
   {"O_WRONLY", get_O_WRONLY},
   {"O_CREAT", get_O_CREAT},
   {"O_APPEND", get_O_APPEND},
@@ -53,7 +53,7 @@ static const luaL_Reg lua_constants[] = {
   {NULL, NULL}
 };
 
-int luaopen_lua_constants(lua_State *L){
-  luaL_newlib(L, lua_constants);
+int luaopen_lua_system_constants(lua_State *L){
+  luaL_newlib(L, lua_system_constants);
   return 1;
 }

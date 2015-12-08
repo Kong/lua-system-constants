@@ -7,17 +7,17 @@ CFLAGS ?= -O2 -Wall -Werror
 
 .PHONY: all clean install
 
-all: lua_constants.so
+all: lua_system_constants.so
 
-lua_constants.so: lua_constants.o
+lua_system_constants.so: lua_system_constants.o
 	$(CC) $(LIBFLAG) $(LUA_LIBDIR) -o $@ $<
-	$(LUA) test/lua_constants_test.lua
+	$(LUA) test/lua_system_constants_test.lua
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) -fPIC $(LUA_INCDIR) $< -o $@
 
-install: lua_constants.so
-	cp lua_constants.so $(INST_LIBDIR)
+install: lua_system_constants.so
+	cp lua_system_constants.so $(INST_LIBDIR)
 
 clean:
 	rm -f *.so *.o *.rock

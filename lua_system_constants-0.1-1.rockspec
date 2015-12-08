@@ -1,15 +1,15 @@
-package = "lua_constants"
+package = "lua_system_constants"
 version = "0.1-1"
 source = {
-  url = "https://github.com/Mashape/lua-constants/archive/0.1-1.tar.gz",
+  url = "https://github.com/Mashape/lua-system-constants/archive/0.1-1.tar.gz",
   dir = "lua-constants-0.1-1"
 }
 description = {
-  summary = "Constants",
+  summary = "System Constants",
   detailed = [[
     Lua utility library to retrieve system constants values, based on the architecture this library has been complied for.
   ]],
-  homepage = "https://github.com/Mashape/lua-constants",
+  homepage = "https://github.com/Mashape/lua-system-constants",
   license = "MIT"
 }
 dependencies = {
