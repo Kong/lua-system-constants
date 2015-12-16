@@ -7,6 +7,7 @@ Retrieve some specific constants values based on the system this library has bee
 #include <lua.h>
 #include <lauxlib.h>
 #include <fcntl.h>
+#include <sys/stat.h>
 
 #if LUA_VERSION_NUM < 502
 # define luaL_newlib(L,l) (lua_newtable(L), luaL_register(L,NULL,l))
