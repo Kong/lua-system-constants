@@ -29,13 +29,14 @@ static int get_O_APPEND(lua_State *L) {
   return 1;
 }
 
-static int get_S_IWUSR(lua_State *L) {
-  lua_pushinteger(L, S_IWUSR);
+// user
+static int get_S_IRUSR(lua_State *L) {
+  lua_pushinteger(L, S_IRUSR);
   return 1;
 }
 
-static int get_S_IRUSR(lua_State *L) {
-  lua_pushinteger(L, S_IRUSR);
+static int get_S_IWUSR(lua_State *L) {
+  lua_pushinteger(L, S_IWUSR);
   return 1;
 }
 
@@ -44,13 +45,51 @@ static int get_S_IXUSR(lua_State *L) {
   return 1;
 }
 
+// group
+static int get_S_IRGRP(lua_State *L) {
+  lua_pushinteger(L, S_IRGRP);
+  return 1;
+}
+
+static int get_S_IWGRP(lua_State *L) {
+  lua_pushinteger(L, S_IWGRP);
+  return 1;
+}
+
+static int get_S_IXGRP(lua_State *L) {
+  lua_pushinteger(L, S_IXGRP);
+  return 1;
+}
+
+// others
+static int get_S_IROTH(lua_State *L) {
+  lua_pushinteger(L, S_IROTH);
+  return 1;
+}
+
+static int get_S_IWOTH(lua_State *L) {
+  lua_pushinteger(L, S_IWOTH);
+  return 1;
+}
+
+static int get_S_IXOTH(lua_State *L) {
+  lua_pushinteger(L, S_IXOTH);
+  return 1;
+}
+
 static const luaL_Reg lua_system_constants[] = {
   {"O_WRONLY", get_O_WRONLY},
   {"O_CREAT", get_O_CREAT},
   {"O_APPEND", get_O_APPEND},
-  {"S_IWUSR", get_S_IWUSR},
   {"S_IRUSR", get_S_IRUSR},
+  {"S_IWUSR", get_S_IWUSR},
   {"S_IXUSR", get_S_IXUSR},
+  {"S_IRGRP", get_S_IRGRP},
+  {"S_IWGRP", get_S_IWGRP},
+  {"S_IXGRP", get_S_IXGRP},
+  {"S_IROTH", get_S_IROTH},
+  {"S_IWOTH", get_S_IWOTH},
+  {"S_IXOTH", get_S_IXOTH},
   {NULL, NULL}
 };
 
