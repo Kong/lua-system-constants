@@ -14,6 +14,11 @@ Retrieve some specific constants values based on the system this library has bee
 # define lua_rawlen lua_objlen
 #endif
 
+static int get_O_RDONLY(lua_State *L) {
+  lua_pushinteger(L, O_RDONLY);
+  return 1;
+}
+
 static int get_O_WRONLY(lua_State *L) {
   lua_pushinteger(L, O_WRONLY);
   return 1;
@@ -78,6 +83,7 @@ static int get_S_IXOTH(lua_State *L) {
 }
 
 static const luaL_Reg lua_system_constants[] = {
+  {"O_RDONLY", get_O_RDONLY},
   {"O_WRONLY", get_O_WRONLY},
   {"O_CREAT", get_O_CREAT},
   {"O_APPEND", get_O_APPEND},
