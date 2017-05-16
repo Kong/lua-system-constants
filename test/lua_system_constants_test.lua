@@ -1,6 +1,7 @@
 local system_constants = require "lua_system_constants"
 
 assert(system_constants.O_WRONLY())
+assert(system_constants.O_RDONLY())
 assert(system_constants.O_CREAT())
 assert(system_constants.O_APPEND())
 
