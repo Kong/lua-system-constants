@@ -1,7 +1,7 @@
 package = "lua_system_constants"
 version = "0.1.2-0"
 source = {
-  url = "git://github.com/Mashape/lua-system-constants",
+  url = "git://github.com/kong/lua-system-constants",
   tag = "0.1.2"
 }
 description = {
@@ -9,7 +9,7 @@ description = {
   detailed = [[
     Lua utility library to retrieve system constants values, based on the architecture this library has been complied for.
   ]],
-  homepage = "https://github.com/Mashape/lua-system-constants",
+  homepage = "https://github.com/kong/lua-system-constants",
   license = "MIT"
 }
 dependencies = {
