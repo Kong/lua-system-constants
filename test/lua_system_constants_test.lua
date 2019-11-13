@@ -4,7 +4,6 @@ assert(system_constants.O_WRONLY())
 assert(system_constants.O_RDONLY())
 assert(system_constants.O_CREAT())
 assert(system_constants.O_APPEND())
-assert(system_constants.O_TRUNC())
 
 assert(system_constants.S_IRUSR())
 assert(system_constants.S_IWUSR())

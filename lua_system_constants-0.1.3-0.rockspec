@@ -1,8 +1,8 @@
 package = "lua_system_constants"
-version = "0.1.4-0"
+version = "0.1.3-0"
 source = {
   url = "git://github.com/kong/lua-system-constants",
-  tag = "0.1.4"
+  tag = "0.1.3"
 }
 description = {
   summary = "System Constants",
