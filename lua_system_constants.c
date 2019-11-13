@@ -34,6 +34,11 @@ static int get_O_APPEND(lua_State *L) {
   return 1;
 }
 
+static int get_O_TRUNC(lua_State *L) {
+  lua_pushinteger(L, O_TRUNC);
+  return 1;
+}
+
 // user
 static int get_S_IRUSR(lua_State *L) {
   lua_pushinteger(L, S_IRUSR);
@@ -87,6 +92,7 @@ static const luaL_Reg lua_system_constants[] = {
   {"O_WRONLY", get_O_WRONLY},
   {"O_CREAT", get_O_CREAT},
   {"O_APPEND", get_O_APPEND},
+  {"O_TRUNC", get_O_TRUNC},
   {"S_IRUSR", get_S_IRUSR},
   {"S_IWUSR", get_S_IWUSR},
   {"S_IXUSR", get_S_IXUSR},
